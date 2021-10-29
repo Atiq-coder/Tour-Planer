@@ -1,0 +1,14 @@
+.background{
+    background: #000;
+}
+.link{
+    text-decoration: none;
+    color: #B4B4B4;
+    font-size: 1.2rem;
+}
+.link:hover{
+    color: #29D9D5;
+}
+span{
+    color: #fff;
+}
