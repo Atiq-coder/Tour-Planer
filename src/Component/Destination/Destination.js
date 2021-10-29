@@ -13,8 +13,7 @@ const Destination = (props) => {
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{text}</Card.Text>
                         <Card.Text><strong>Price: ${price}</strong></Card.Text>
-                        <Button variant="secondary">Buy Now</Button>
-                        <Button className="ms-3" variant="secondary">Details</Button>
+                        <Button variant="secondary">Book Now</Button>
                     </Card.Body>
                 </Card>
             </Col>

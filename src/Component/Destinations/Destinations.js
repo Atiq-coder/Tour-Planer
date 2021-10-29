@@ -16,7 +16,7 @@ const Destinations = () => {
 
         <div className="cards-section container-fluid">
             <h2 className="pt-5 text-center text-white">OUR DESTINATIONS</h2>
-            <Row xs={1} md={3} className="g-1">
+            <Row xs={1} md={3} className="g-1 bg-dark">
                 {
                     services.map(service => <Destination key={service.id} service={service}></Destination>)
                 }

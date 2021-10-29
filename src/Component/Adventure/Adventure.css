@@ -1,5 +1,5 @@
 .adventure-section{
     background-image: url("https://wallpaperaccess.com/full/432499.png");
-    width: 100vw;
+    max-width: 100vw;
     background-attachment: fixed;
 }
