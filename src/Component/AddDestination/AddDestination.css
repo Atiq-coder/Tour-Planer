@@ -1,4 +1,4 @@
-.signin{
+.add-destination{
     height: 90vh;
     background: #fff;
     display: flex;
@@ -6,6 +6,3 @@
     align-items: center;
 }
 
-/* .form{
-    width: 30%;
-} */

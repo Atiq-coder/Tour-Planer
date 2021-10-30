@@ -23,7 +23,7 @@ const SignIn = () => {
 
     return (
         <div className="signin">
-            <div className="form">
+            <div className="w-50">
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>

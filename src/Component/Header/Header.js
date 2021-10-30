@@ -16,14 +16,20 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link><Link className="link" to="/home">Home</Link></Nav.Link>
                             <Nav.Link><Link className="link" to="/Destinations">Destinations</Link></Nav.Link>
-                            <Nav.Link><Link className="link" to="/doctors">Doctors</Link></Nav.Link>
                             <Nav.Link><Link className="link" to="/myorder">My Order</Link></Nav.Link>
+                            {user.email ?
+                                <Nav.Link><Link className="link" to="/manageorders">Manage Orders</Link></Nav.Link>
+                                :
+                                ''}
+                            {user.email ?
+                                <Nav.Link><Link className="link" to="/adddestination">Add Destination</Link></Nav.Link>
+                                :
+                                ''}
                             <span className="text-white mt-2">{user.displayName}</span>
-                            {
-                                user.email ?
-                                    <Button variant="secondary" onClick={logOut}>Sign Out</Button>
-                                    :
-                                    <Nav.Link><Link className="link" to="/signin">Sign In</Link></Nav.Link>}
+                            {user.email ?
+                                <Button variant="secondary" onClick={logOut}>Sign Out</Button>
+                                :
+                                <Nav.Link><Link className="link" to="/signin">Sign In</Link></Nav.Link>}
                         </Nav>
                     </Container>
 
