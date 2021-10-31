@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import './GalleryImg.css';
 
 const GalleryImg = (props) => {
     const { img } = props.service;
