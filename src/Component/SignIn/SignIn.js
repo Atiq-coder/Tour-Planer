@@ -24,6 +24,7 @@ const SignIn = () => {
     return (
         <div className="signin">
             <div className="w-50">
+                {/* Sing In form */}
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>

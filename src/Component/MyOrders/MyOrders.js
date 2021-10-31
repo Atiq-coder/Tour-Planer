@@ -13,7 +13,7 @@ const MyOrders = () => {
     return (
 
         <div className="cards-section container">
-            <Row xs={1} md={2} className="d-flex justify-content-center bg-dark">
+            <Row xs={1} md={2} className="d-flex justify-content-center mt-5">
                 {
                     services.map(service => <MyOrder key={service._id} service={service}></MyOrder>)
                 }

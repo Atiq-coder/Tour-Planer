@@ -3,12 +3,12 @@ import { Card, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Destination = (props) => {
-    const { _id, title, text, img, price } = props.service;
+    const { title, text, img, price } = props.service;
     return (
         <div>
             {/* Product card */}
             <Col className="p-4 product-card">
-                <Card>
+                <Card className="bg-dark text-white">
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>{title}</Card.Title>

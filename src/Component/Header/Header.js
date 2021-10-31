@@ -8,7 +8,7 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className="background" variant="dark">
+            <Navbar collapseOnSelect expand="lg" className="background" bg="dark" variant="dark">
                 <Navbar.Brand className="ps-1"></Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>

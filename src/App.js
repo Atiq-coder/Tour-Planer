@@ -44,9 +44,6 @@ function App() {
             <Route path="/signin">
               <SignIn></SignIn>
             </Route>
-            {/* <Route path="/myorder/:myorderId">
-              <MyOrder></MyOrder>
-            </Route> */}
             <Route path="/*">
               <NotFound></NotFound>
             </Route>

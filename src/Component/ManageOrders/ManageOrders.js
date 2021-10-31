@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import ManageOrder from './ManageOrder';
+import ManageOrder from '../ManageOrder/ManageOrder';
 
 const ManageOrders = () => {
     const [services, setServices] = useState([]);
@@ -13,7 +13,7 @@ const ManageOrders = () => {
     return (
 
         <div className="cards-section container">
-            <Row xs={1} md={2} className="d-flex justify-content-center bg-dark">
+            <Row xs={1} md={2} className="d-flex justify-content-center mt-5">
                 {
                     services.map(service => <ManageOrder key={service._id} service={service}></ManageOrder>)
                 }

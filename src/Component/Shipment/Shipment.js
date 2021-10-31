@@ -6,6 +6,7 @@ const Shipment = () => {
     return (
         <div className="shipment">
             <div className="w-50">
+                {/* Shipping Form */}
                 <Form>
                     <h5>Order contact</h5>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
