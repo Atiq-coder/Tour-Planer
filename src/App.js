@@ -7,10 +7,11 @@ import Destinations from './Component/Destinations/Destinations';
 import NotFound from './Component/NotFound/NotFound';
 import SignIn from './Component/SignIn/SignIn';
 import AuthProvider from './context/AuthProvider';
-import MyOrder from './Component/MyOrder/MyOrder';
+import MyOrders from './Component/MyOrders/MyOrders';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import AddDestination from './Component/AddDestination/AddDestination';
 import ManageOrders from './Component/ManageOrders/ManageOrders';
+import Shipment from './Component/Shipment/Shipment';
 
 function App() {
   return (
@@ -28,8 +29,11 @@ function App() {
             <Route path="/destinations">
               <Destinations></Destinations>
             </Route>
-            <PrivateRoute path="/myorder">
-              <MyOrder></MyOrder>
+            <PrivateRoute path="/shipment">
+              <Shipment></Shipment>
+            </PrivateRoute>
+            <PrivateRoute path="/myorders">
+              <MyOrders></MyOrders>
             </PrivateRoute>
             <Route path="/manageorders">
               <ManageOrders></ManageOrders>

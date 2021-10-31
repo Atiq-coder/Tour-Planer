@@ -16,7 +16,7 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link><Link className="link" to="/home">Home</Link></Nav.Link>
                             <Nav.Link><Link className="link" to="/Destinations">Destinations</Link></Nav.Link>
-                            <Nav.Link><Link className="link" to="/myorder">My Order</Link></Nav.Link>
+                            <Nav.Link><Link className="link" to="/myorders">My Order</Link></Nav.Link>
                             {user.email ?
                                 <Nav.Link><Link className="link" to="/manageorders">Manage Orders</Link></Nav.Link>
                                 :

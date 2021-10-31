@@ -14,7 +14,7 @@ const Destination = (props) => {
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{text}</Card.Text>
                         <Card.Text><strong>Price: ${price}</strong></Card.Text>
-                        <Link to={`/myorder/${_id}`}><Button variant="secondary">Book Now</Button></Link>
+                        <Link to="/shipment"><Button variant="secondary">Book Now</Button></Link>
                     </Card.Body>
                 </Card>
             </Col>

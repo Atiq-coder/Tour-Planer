@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import ManageOrder from './ManageOrder';
+import MyOrder from '../MyOrder/MyOrder';
 
-const ManageOrders = () => {
+const MyOrders = () => {
     const [services, setServices] = useState([]);
     // Data load
     useEffect(() => {
@@ -15,7 +15,7 @@ const ManageOrders = () => {
         <div className="cards-section container">
             <Row xs={1} md={2} className="d-flex justify-content-center bg-dark">
                 {
-                    services.map(service => <ManageOrder key={service._id} service={service}></ManageOrder>)
+                    services.map(service => <MyOrder key={service._id} service={service}></MyOrder>)
                 }
             </Row>
         </div>
@@ -23,4 +23,4 @@ const ManageOrders = () => {
     );
 };
 
-export default ManageOrders;
+export default MyOrders;

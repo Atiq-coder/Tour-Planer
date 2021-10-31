@@ -8,7 +8,7 @@ const Gallery = () => {
     const [services, setServices] = useState([]);
     // Data load
     useEffect(() => {
-        fetch('http://localhost:5000/destinations')
+        fetch('https://eerie-demon-25137.herokuapp.com/destinations')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);
@@ -19,7 +19,7 @@ const Gallery = () => {
             <h2 className="pb-4 text-center text-white">We Record Memories</h2>
             <Row xs={1} md={3}>
                 {
-                    services.map(service => <GalleryImg key={service.id} service={service}></GalleryImg>)
+                    services.map(service => <GalleryImg key={service._id} service={service}></GalleryImg>)
                 }
             </Row>
         </div>

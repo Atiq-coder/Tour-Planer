@@ -1,8 +1,23 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 
 const ManageOrder = (props) => {
     const { _id, title, text, img, price } = props.service;
+
+
+    const handleDelete = id => {
+        const url = `https://eerie-demon-25137.herokuapp.com/destinations/${id}`;
+        fetch(url, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount > 0) {
+                    alert('Deleted successfully');
+
+                }
+            })
+    }
     return (
         <div>
             <Card border="primary" style={{ maxWidth: '30rem' }}>
@@ -15,7 +30,7 @@ const ManageOrder = (props) => {
                     </Card.Text>
                     <Card.Text>${price}</Card.Text>
                     <Button variant="secondary" className="me-4">Approve</Button>
-                    <Button variant="secondary">Delete</Button>
+                    <Button onClick={() => handleDelete(_id)} variant="secondary">Delete</Button>
                 </Card.Body>
             </Card>
             <br />

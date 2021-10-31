@@ -18,7 +18,7 @@ const AddDestination = () => {
         const NewDestination = { title, text, price, img };
 
         //Post Destination
-        fetch('http://localhost:5000/destinations', {
+        fetch('https://eerie-demon-25137.herokuapp.com/destinations', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
