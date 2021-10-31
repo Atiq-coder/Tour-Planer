@@ -36,7 +36,7 @@ const AddDestination = () => {
     }
     return (
         <div className="add-destination">
-            <div className="w-50">
+            <div className="w-50 text-white">
                 {/* Add product form */}
                 <Form onSubmit={handleAddDestination}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

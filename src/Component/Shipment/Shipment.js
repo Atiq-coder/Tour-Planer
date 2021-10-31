@@ -5,7 +5,7 @@ import './Shipment.css';
 const Shipment = () => {
     return (
         <div className="shipment">
-            <div className="w-50">
+            <div className="w-50 text-white">
                 {/* Shipping Form */}
                 <Form>
                     <h5>Order contact</h5>
